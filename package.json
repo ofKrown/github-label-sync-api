@@ -1,7 +1,7 @@
 {
   "name": "github-label-sync-api",
-  "version": "1.1.0",
-  "description": "API for https://github.com/bmatz/github-label-sync-api",
+  "version": "1.2.0",
+  "description": "API for https://github.com/bmatz/github-label-sync-web",
   "main": "lib",
   "homepage": "https://github.com/bmatz/github-label-sync-api",
   "repository": {
