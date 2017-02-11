@@ -10,13 +10,23 @@ $ npm install github-label-sync-api --save
 
 You will need a GitHub API token. You can create one here -> [https://github.com/settings/tokens](https://github.com/settings/tokens). Make sure to check 'repo - Full control of private repositories'
 
+## async - await
+
+github-label-sync-api uses async-await syntax. You will need to run your script with the **--harmony-async-await** flag.
+
+e.g.:
+
+```bash
+$ node --harmony-async-await index.js
+```
+
 ## Usage
 
 ```js
 const api = require('github-label-sync-api');
 
 const token = 'dummytoken';
-const repositoryName = 'bmatz/github-label-sync-api');
+const repositoryName = 'bmatz/github-label-sync-api';
 
 // get affiliated repositories
 const repositories = await api.getAffiliated(token);
