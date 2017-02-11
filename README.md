@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-$ npm install github-label-sync-api --save
+$ yarn add github-label-sync-api
 ```
 
 ## API token
