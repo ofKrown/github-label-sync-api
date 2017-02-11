@@ -1,12 +1,16 @@
 # github-label-sync-api
 
-Install
+## Installation
 
 ```bash
 $ npm install github-label-sync-api --save
 ```
 
-Usage
+## API token
+
+You will need a GitHub API token. You can create one here -> [https://github.com/settings/tokens](https://github.com/settings/tokens). Make sure to check 'repo - Full control of private repositories'
+
+## Usage
 
 ```js
 const api = require('github-label-sync-api');
@@ -24,32 +28,32 @@ const repository = await api.getRepository(token, repositoryName);
 const labels = await api.getLabels(token, repositoryName);
 
 // create a single label
-await api.createLabel(token, repositoryName, { 
+await api.createLabel(token, repositoryName, {
   name: 'TestLabel',
   color: 'ff0011'
 });
 
 // create multiple labels
-await api.createLabels(token, repositoryName, { 
+await api.createLabels(token, repositoryName, {
   name: 'TestLabel',
   color: 'ff0011'
-}, { 
+}, {
   name: 'TestLabel2',
   color: 'ff1111'
 });
 
-  
+
 // update a single label
-await api.updateLabel(token, repositoryName, { 
+await api.updateLabel(token, repositoryName, {
   name: 'TestLabel',
   color: 'ff0022'
 });
 
 // update multiple labels
-await api.updateLabels(token, repositoryName, { 
+await api.updateLabels(token, repositoryName, {
   name: 'TestLabel',
   color: 'ff0022'
-}, { 
+}, {
   name: 'TestLabel2',
   color: 'ff1122'
 });
