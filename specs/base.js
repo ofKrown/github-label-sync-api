@@ -24,6 +24,6 @@ function loadTests() {
 	return fileList;
 }
 
-describe('Tests', async () => {
+describe('Tests', () => {
 	loadTests();
 });

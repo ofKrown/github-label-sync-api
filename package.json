@@ -1,14 +1,23 @@
 {
-  "name": "github-label-sync-lib",
+  "name": "github-label-sync-api",
   "version": "1.0.0",
-  "description": "insert me",
-  "main": "index.js",
-  "repository": {},
+  "description": "API for https://github.com/bmatz/github-label-sync-api",
+  "main": "lib",
+  "homepage": "https://github.com/bmatz/github-label-sync-api",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmatz/github-label-sync-api.git"
+  },
+  "engine": {
+    "node": ">=7.0.0"
+  },
   "author": "bernhard@trigo.at",
   "license": "MIT",
   "scripts": {
-    "test": "mocha --harmony-async-await specs",
-	"test-watch": "mocha --harmony-async-await specs --watch",
+    "test": "mocha --harmony-async-await specs specs/test.js",
+	"test-integration": "mocha --harmony-async-await specs/production.js --timeout 5000",
+	"test-watch": "mocha --harmony-async-await specs/test.js --watch",
+	"test-integration-watch": "mocha --harmony-async-await specs/production.js --timeout 5000 --watch",
     "lint": "eslint ./**/*.js"
   },
   "devDependencies": {

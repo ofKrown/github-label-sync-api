@@ -32,5 +32,6 @@ module.exports = {
 		'no-console': [1, { allow: ['warn'] }],
 		'arrow-parens': [2, 'as-needed', { requireForBlockBody: true }],
 		'no-unused-expressions': 0,
+		'class-methods-use-this': 0,
 	},
 };
