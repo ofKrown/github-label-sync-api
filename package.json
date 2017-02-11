@@ -1,0 +1,26 @@
+{
+  "name": "github-label-sync-lib",
+  "version": "1.0.0",
+  "description": "insert me",
+  "main": "index.js",
+  "repository": {},
+  "author": "bernhard@trigo.at",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --harmony-async-await specs",
+	"test-watch": "mocha --harmony-async-await specs --watch",
+    "lint": "eslint ./**/*.js"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-mocha": "^4.8.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "github": "^8.2.1",
+    "ramda": "^0.23.0"
+  }
+}
