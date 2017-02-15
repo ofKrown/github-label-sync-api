@@ -73,5 +73,5 @@ await api.updateLabels(token, repositoryName, {
 await api.deleteLabel(token, repositoryName, 'TestLabel');
 
 // delete multiple labels
-await api.deleteLabels(token, repositoryName, 'TestLabel', 'TestLabel2');
+await api.deleteLabels(token, repositoryName, ['TestLabel', 'TestLabel2']);
 ```
