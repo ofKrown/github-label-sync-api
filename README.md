@@ -17,7 +17,7 @@ github-label-sync-api uses async-await syntax. You will need to run your script 
 e.g.:
 
 ```bash
-$ node --harmony-async-await index.js
+$ node index.js --harmony-async-await
 ```
 
 ## Usage
