@@ -44,13 +44,13 @@ await api.createLabel(token, repositoryName, {
 });
 
 // create multiple labels
-await api.createLabels(token, repositoryName, {
+await api.createLabels(token, repositoryName, [{
   name: 'TestLabel',
   color: 'ff0011'
 }, {
   name: 'TestLabel2',
   color: 'ff1111'
-});
+}]);
 
 
 // update a single label
@@ -60,13 +60,13 @@ await api.updateLabel(token, repositoryName, {
 });
 
 // update multiple labels
-await api.updateLabels(token, repositoryName, {
+await api.updateLabels(token, repositoryName, [{
   name: 'TestLabel',
   color: 'ff0022'
 }, {
   name: 'TestLabel2',
   color: 'ff1122'
-});
+}]);
 
 
 // delete a single label
